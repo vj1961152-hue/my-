@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vedant Portfolio</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            border-color: black;
+            border-radius: 0px;
+            cursor: pointer;
+            border-radius: 100px;
+            size: 1opx;
+            height: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vedant Joshi</h1>
+        <p>Web Developer</p>
+    </header>
+
+
+
+
+    <section>
+        <div class="box">
+            <h2>About Me</h2>
+            <p>I am a beginner web developer learning HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="box">
+            <h2>Skills</h2>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="box">
+            <h2>Projects</h2>
+            <p>1. Portfolio Website</p>
+            <p>2. Business Website</p>
+            <p>3. WhatsApp Contact Form</p>
+        </div>
+
+        <div class="box">
+            <h2>Contact Me</h2>
+            <button onclick="contact()">Chat on WhatsApp</button>
+        </div>
+    </section>
+    <footer class><a href="https://wa.me/8849626500?text=devloper" target="_main"> <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAACUCAMAAAC3HHtWAAAAaVBMVEUAAAD////09PT4+Pj8/PyBgYFdXV1ZWVnx8fH//f7o6Ojl5eUnJyfS0tK9vb2IiIiampofHx85OTnZ2dm1tbWUlJR0dHTJyclra2uqqqpiYmLDw8OhoaEtLS2Ojo5ERERQUFAXFxcNDQ0vUpPBAAALOklEQVR4nM1ciZaiOhAlEAVkk0UBRVH+/yMnBMgCWWmn7TpvOP3aFi6hlltVoRwAPNebD64LAXQ9fEC/Qj9ggW7geW6wHILAnQ7ufBj/jx7wh+OfuvOB/NXypxB6Hj4vmC4ECQAPA5gOzhaZOyMDQZJ2z+zaNLcjEt+fD/50OHKH4+ZXR/GH6N+taZprdmnTElJ4W2RoZcZ7IAf8A4BRdX07/1/yaxWhq0EBCodZJ3dGDmDVPH4B1iSPphqvCxgA+LBdM3Dqfg3VIt0JsCjwDxs9A1X/68Acp0+Bxys6YwEQr2nkfwHXKH4EFRYAQBp/CZjjxGjZRhDLweE8xflruEY5ewILwHYKnl8F5jgZYL0Go2ffBoageQIL8MDvO4utdGAJjy7Vs/rbqLDUkOjZ4v6D4tugsBQngmz2GaD5NqZZGjC7sEXP/sazHKWGswVMfs39luvfih/Ma4b1DKbfxsPIffG0IzLwN9R/kmKxgNHJlt9Gw0kJiAX8zPsPxau5VEmESD7i+q4blWl7PRb57hNmgHCNYL/+D01XR3Mmw8kpqbKdxNhHOczMNfY+zOJQewJQRGB08fdkE4k3cw1Q7cLV3AMVrFnq82B95haMyJCe7fH/RXYygIXFvdvy92bhGsBaWfOzyXLRp5raYXtPFoD0zBbXAS12aAEM/VdbeUxEOLAFuHbAjqXNei0S2NC/E5wsILLBFd/34BolMlfn0dciPbPiGVeJ4rvlvT1jaataZhzGy5YAbAHAPJwP3epao48NoqopYsZvDfHjeC5PAv9bGvreMS9GembuzuJkcy2YZhK7yw/tdu0CsydaAcy2QWsI7BitYUVP5SLEx8RdYzMK0S3AbNv08Tfrq9RX/Zf6lvtWGBqtwxlgrgEuRsCu7CWQDiVHo685cbWKrQbQLgCzbZAZAeMVOjL60iQ9p57QwOKy2QJMLnLlbhxWdgENfZu9Me2qHWYLOOhP7e+xMEYK1j/rdQ0jQ//0yHrO/u1i4Cy8J9Rc8jBbgBbZwLmLfWzOuXEWdNMgmyxAiyxlgVmo/goau/CB0hEeAGbbWmQX5ozeD5KZmF36RI0M55s6ZD27Yj8qf/Qsf1LVN80sYGBOB39Y/HswVBi+VMgmrqFGdja8TyO5MdAUGRtGhhIoJbKCcZEfqH40zH3Ko6KRBTAuMvlEJ6ql0UBun5MFqNesoUvmfaQXNdTL+UK5ZzzMbFuFjJxnE/jPZYSktu4FPZYIHIbuS4pMawFH+izv3AfFYrFW6Q2WjJ5Ttmg4OqmfJsNf+Ge5OE0IDOgjL296UlcSgfVc40i5D+cwkLIQ/bMv1xDiIqXTGJkybrYEWMTd3ZOxfU8dnEVC4/BJhkzDNWLqFzn1HwAr9tyjp49CfG2tBVypQnC/57mWZ19dpIt2F36Okan0jKoqFy8fq+zOPpi+6G0JbUBnATT+BpzXuq2yb3vH4VCWIDRtHdfISC2KV6UnDwxAa8dB9ETSiNNZQEWQXde/58U+0heE3wZiZEq2PVLQUKD/zra6YZ+ykLuDIi56mPNNCbICLMhWfmFb2bNv2i4hKhRyPg3XoD5jdVtbZPadvnxyaWEoVAUN1yBMKljxiXqDbAeljBZkpWAjhsYCiDrVK8bYrnBBsGNbTLcgE0V1Ddsm/nQdfg4fWLKZdo96/BIhU7HtguTUa77urwppu1h4T+r2Am+otgCfhN21XQ+8CXi7tjhRjyZIVNQWQApmcKMIbNIOTvv2XtGar6AwpOYahBR725YWi8ygxiUSmqkIXI6aa5CF8bafManZ3tIQjQJCZEBhAQcFshdjA55hvVaKTFB7UbPtTvFNrqQQ2TcwufMLGDfytAoLIN8UpiBsF3HfVqdWiUzFNciyCCtdPsMed/AzR7tmnrx+RvRMyKA4Iwj27DMgaybTM70FSNqf1N2GINoBjViAIElRW8BhWROBbY7is6omToGUQvInoddQcY3bEp2gZEGYUlhoHzvfxNMKqKPaAvrFZ0GZw+LY0HbV8kzl6WhqKEgK1Wz7TZ6WtM7OVOORrq3i55gTep00qNI8XVB90OSb5KakvZg311oJ+EvcMc05VZJ6IO0XvSTIpHpGSXUtdfIxz4cqhjjTR10Jdx2RsHyScVo5MuIKI3nS1vO9y5IsG01vEJ9OX9tvkvtOBAamyTfpeis0uV/1ypMJ223VbU03ykS0WKQrmtp2Qc6uahr3K+od1ogCx9ve/iq4HkkEEdmXJt+kVUtlSaVY9/3BqRXsGlqpRLukAUKurqttEyUOlYS630ATCU/KkemEirvWVfZo61zNc3K+4SvezRRx3sMnfyR0SbruTk4eSqmO2MM6NxYIzyiWcA7F1qXt7tzJ93XNw0a7H41bm4EYVyR8iUPb3aF9CmWfdJTXttjBC+c2aFooji/a7k5OdVufhsh2WU0axVEpmgVL0ht9d4cWsQ0I2KOFuIQiRMa5RNrfkfgjbW3bKaj6mLSpHyJHhoUDNriqmsaETLuThPIcsyZOL96ayZPDjqysjKXruzu4Iiq6bbkMTU3AhaOANXPzYag7p8lOEqZFZFxZKZ53RtuibEXEKXOS5lwmO0leywIYbDhhJG7aJIqi8t71a3LHtIakZ9TUtieh5fHPvHbRUH5UShmp0U4S4kFFlV57iSlpEnYCGGSap0mp/t5qFCc50+VQVHdNLIAu/q7ixVqYGHZSPIPJAtS7Img56gObNQa2Y6W6U4OdJLRmuaNVuBGWxym37RnsJIkJefz5q50Du41NHVIM9lLdyKl21jyp5GxuqnHbSM90FkAUQ5Fzmgm3gVlaKqHIdHupyOl2lKH4a7Edbk8XTvRcg/Zx+ILN27I7UfDNWm2c01sA7ZjTh/noL0ngtRYbq4YLT430rEW/l4pY01LlfZ2rOSgExnshDuyChUabS7VsmxYBkPfJi2t6YksFwcEgkr5vq667a0JZstE20dOU3sSLsuJDt+5Ro49O55f6CvGTxwVBYOR9stkCpM+9m5FBGIhenUPilYeHLGw9jtuXyEoz0xmzvpFrSN07s0yinGgGl3SHjbPLb5c0AJs6gilf6WYLkIWwwvRFMBhEdZvd+gJJ71/P9zIQvQnoGtOVdmbb8j19nxO0eLKKrUCqmW3LKJxBHcVcLN7DmrzViExStMhlb6md7qXVe3XYii1wTQTTgUD2lnAhuooXnY+Fk1+NqnmLBJ3lVtxoYttQstkwW1/ALdsDcRGN+nVXRhLDHJoRd3pTXvaWJFd3gkF17TmfP/StzMsx4qW3HTQdLG/Ki79LfUZUXcQeEuW7HLiQd3tRetjVyX6DZVaE0GymrAl6dfZSaEn+QtHU26wdihp15u/d6N0s7wlDoavtRiPszBJzP+uqe50kZVkmSVq1z9uPdp9Xy3vCnshtDG17s2PY7zyP4zjf/4Y8kZK+Kf/6+dk+KNO0CKxne3fQ/Cd5QjKVZ/dL/P9HSnYqz9+aYsFO5flp0vZJSSGZS4Wc1h+yAZRJsnOp4N+ZMHNnpvKMItoB8BVpwIyITH8SNdq/IIjhL3Opxjku48ixP/I8a8Fcqj8yMYvOP6OT2bzd74x+TJ7sZLYxontgmk31bWgIGMRQADOXajp8eZodP5uQDN0bh0F9cwLgIwXcKMzVDEwQvb4E7HUC2xmY5NHCcaid5TSYz0hfgQXAdCAWQMwAeeAvTOc8nxYUEgsgA2B/eaLpmODYTIH9AKHXyvt6F0yB3czAdBnkeMhPmXaXcXJucyNDb5cRuLebLxmZu56pu521O47OvWbPNk0CwK+TcgqsR3+YBsjg+azzoGCPmx3s8pOHVcOI2cnDY5xeMvjNtenhH7C4fQioj3WKAAAAAElFTkSuQmCC">
+            <h2>|whatsapp|</h2>
+            <br><br>
+            <p>© 2026 devloper vedant | Made with ❤️</p>
+    </footer>
+    <script>
+        function contact() {
+            var url = "https://wa.me/8849626500";
+            window.open(url, "_blank");
+        }
+    </script>
+
+
+</body>
+
+</html>"
